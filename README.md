@@ -1,36 +1,74 @@
-# HackerMooseAI 靜態網站
+# HackerMooseAI
 
-直接雙擊 `index.html` 即可瀏覽；不需要安裝套件、編譯或資料庫。
+A responsive static website showcasing HackerMooseAI projects, with English and Traditional Chinese content, a dedicated contact page, and Idaho-based Terms of Service.
 
-本機預覽也可執行 `python -m http.server 8017`，開啟 http://localhost:8017 。
+## Local preview
 
-## 檔案
-- `index.html`：首頁與作品介紹。
-- `contact.html`：獨立聯絡頁面、表單與中英文文案。
-- `styles.css`：深藍色、紫藍光暈、弧形地平線、桌面與手機排版。
-- `script.js`：中英文切換與手機選單。
-- `picture/`：使用者提供的公司 Logo、麋鹿品牌圖案，原檔保留。
-- `assets/`：本地產品展示圖片，無需外部網路即可顯示。
+No dependencies, build tools, or database are required. From the project directory, run:
 
-## 內容設定
-產品方案展示 Picking Geek AI 與 US Visa Photo，附使用者提供的品牌圖片、中英文簡介與外部網站連結。獨立聯絡頁已加入姓名、公司、Email、電話、詢問主題與訊息表單。姓名、Email、訊息為必填；表單透過 FormSubmit POST 寄往 hackermooseaitech@gmail.com，保留服務預設驗證，並提供直接寄信連結。正式使用時請替換成實際產品資料、公司資訊與聯絡方式。
+```sh
+python -m http.server 8017 --bind 127.0.0.1
+```
 
-## 視覺參考與素材
-配色、發光弧線、置中主視覺、雙欄產品圖片及頁尾布局參考 https://dwave.cc/en-US 。程式碼重新製作，使用 HackerMooseAI 品牌；沒有加入參考公司的獎項、客戶背書、商標或追蹤程式。
-產品卡片已改用使用者提供的 Picking Geek AI 與 US Visa Photo 品牌圖片；舊展示照片未在首頁使用。
+Open [the homepage](http://127.0.0.1:8017/index.html), [Contact Us](http://127.0.0.1:8017/contact.html), or [Terms of Service](http://127.0.0.1:8017/terms.html).
 
-此版本只儲存在指定資料夾，未發布到線上。
+You can also open `index.html` directly to preview the design. Contact form submission requires an HTTP or HTTPS page; it is blocked when opened through `file://`.
 
-## 聯絡表單啟用
-- 本機請執行 `python -m http.server 8017`，使用 `http://localhost:8017/contact.html`；直接雙擊檔案僅可預覽，請勿用 file:// 測試寄送。
-- 從 HTTP/HTTPS 頁面送出第一次表單後，FormSubmit 會寄出信箱確認信。請到 hackermooseaitech@gmail.com 收信並點擊啟用連結，也請檢查垃圾郵件匣。
-- 啟用後請再次送出測試訊息，確認收件；目前只完成設定與本機程式檢查，未送出測試郵件或驗證實際投遞。
-- 收件信箱由網站擁有者啟用；參考 https://formsubmit.co/ 。無需在前端保存 Gmail 密碼。
+## Projects
 
-## 使用條款
-- `terms.html`：美國 Idaho 州版本，生效日 2026-10-20，英文與繁體中文共 16 節；所有頁尾提供使用條款連結。
-- 採用 HackerMooseAI 品牌營運者稱呼；法律姓名或正式法人名稱尚待擁有者提供，不宣稱為已註冊公司。
-- 保留強制性消費者保護，不設專屬審判地、強制仲裁或集體訴訟權利拋棄。
-- 上線前應由 Idaho 合格律師核對營運者身分、產品條款、實際付款／退款流程與內容。Terms 不取代隱私政策；目前未建立獨立隱私政策，仍須按實際資料處理另行補足。
-- 單純頁尾連結不代表使用者已明示接受；需在實際產品註冊或結帳流程安排適當告知與同意。此任務未修改外部產品。
-- 參考：FTC COPPA FAQ、FTC ROSCA 訂閱說明、Investor.gov AI Investor Alert、美國國務院 Photo Requirements。
+- **[Picking Geek AI](https://pickinggeek002.onrender.com/)**: AI-assisted research for US and Taiwan stocks, including technical indicators, interactive charts, and generated market insights.
+- **[US Visa Photo](https://usphotoapp-codex.onrender.com/)**: Portrait preparation with background processing, cropping, previews, and digital or print layouts as described by the product.
+
+Both project cards use owner-provided images and link directly to their respective applications.
+
+## Project structure
+
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Homepage, project showcase, brand introduction, and vision. |
+| `contact.html` | Standalone contact form with bilingual labels. |
+| `terms.html` | Standalone Terms of Service with 16 bilingual sections. |
+| `styles.css` | Shared responsive layout, colors, typography, and page styles. |
+| `script.js` | Language switching, mobile navigation, and local-file form handling. |
+| `assets/` | Project images, space background, and unused legacy demonstration images. |
+| `picture/` | Owner-provided brand assets, including retained original illustrations. |
+| `AGENTS.md` | Project instructions, including the English-first README preference. |
+
+## Contact form
+
+The form submits through FormSubmit to **hackermooseaitech@gmail.com**. It includes name, company, email, phone, inquiry topic, and message fields. Name, email, and message are required. The service's default verification remains enabled, and a direct email link is available as an alternative.
+
+To activate and verify delivery:
+
+1. Open the contact page through the local server or an HTTPS deployment.
+2. Submit a test message and complete any verification requested by FormSubmit.
+3. Check the recipient inbox and spam folder for the initial confirmation email, then activate the address.
+4. Submit another test message and confirm that it arrives.
+
+The integration has been configured, but actual delivery and recipient activation have not been independently verified. Do not store Gmail passwords or other credentials in the frontend.
+
+See the [FormSubmit documentation](https://formsubmit.co/) for service details.
+
+## Terms of Service
+
+The terms use Idaho law and applicable US federal law, with an effective date of **October 20, 2026**. They address AI output, investment research, visa photo preparation, payments, user content, external services, and consumer rights.
+
+- HackerMooseAI is identified as a brand; the operator's legal name or registered entity name still needs to be supplied.
+- The terms preserve mandatory consumer protections and do not impose exclusive venue, mandatory arbitration, or a class-action waiver.
+- The terms do not replace a privacy policy. A separate privacy notice reflecting actual data handling still needs to be prepared.
+- A footer link alone does not establish express acceptance. Relevant product registration or checkout flows need appropriate notice and acceptance mechanisms; those external applications are outside this repository.
+- Before production use, have Idaho counsel review the operator identity, product terms, payment and refund practices, and final wording.
+
+Research references include the [FTC COPPA FAQ](https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions), [FTC subscription guidance](https://www.ftc.gov/business-guidance/blog/2019/03/recipe-rosca-violation), [Investor.gov AI investor alert](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-alerts/artificial-intelligence-fraud), and [US Department of State photo requirements](https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html).
+
+## Design and assets
+
+The initial visual direction was inspired by [DeepWave](https://dwave.cc/en-US): dark colors, luminous accents, centered hero content, a two-column showcase, and a structured footer. The implementation uses HackerMooseAI branding without importing the reference company's awards, endorsements, trademarks, or tracking code.
+
+Current project cards use owner-provided artwork. Legacy demonstration photographs remain in `assets/` but are not referenced by the current pages; review their licensing before any reuse. Original moose illustrations remain in `picture/` and are not displayed on the current pages.
+
+## Source and documentation
+
+Source repository: [JamesChenPoChih/hackermooseai](https://github.com/JamesChenPoChih/hackermooseai), branch `main`. Pushing source code does not itself configure website hosting.
+
+**Maintain this README and future README files primarily in English.** Translations may be provided as supplementary documentation when requested. This documentation preference does not change the website's bilingual interface.
