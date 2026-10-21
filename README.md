@@ -36,7 +36,7 @@ Both project cards use owner-provided images and link directly to their respecti
 
 ## Contact form
 
-The form submits through FormSubmit to **hackermooseaitech@gmail.com**. It includes name, company, email, phone, inquiry topic, and message fields. Name, email, and message are required. The service's default verification remains enabled, and a direct email link is available as an alternative.
+The form submits through FormSubmit to **support@hackermooseai.com**. It includes name, company, email, phone, inquiry topic, and message fields. Name, email, and message are required. The service's default verification remains enabled, and a direct email link is available as an alternative.
 
 To activate and verify delivery:
 
