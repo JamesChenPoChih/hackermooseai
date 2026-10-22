@@ -82,7 +82,7 @@ Expected public URL: https://hackermooseai.com/google0e7849a24014a087.html
 ### Current status and follow-up
 
 - October 22, 2026: Added the original verification file to this static site's root. Its SHA-256 matches the supplied file.
-- Public availability and Google's verification result still need to be confirmed after deployment. Publishing the file alone does not establish that Android developer verification is complete.
+- Render deployment `dep-dbd3hl8m7kps73df41s0` successfully published commit `d0405d8` on October 22, 2026. The public verification URL returns HTTP 200 with `text/html` and content exactly matching the supplied file; browser display was also confirmed. The owner still needs to click Verify in Google; Android developer verification is not yet confirmed.
 
 ### Recent work
 
