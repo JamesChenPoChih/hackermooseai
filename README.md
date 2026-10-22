@@ -72,3 +72,18 @@ Current project cards use owner-provided artwork. Legacy demonstration photograp
 Source repository: [JamesChenPoChih/hackermooseai](https://github.com/JamesChenPoChih/hackermooseai), branch `main`. Pushing source code does not itself configure website hosting.
 
 **Maintain this README and future README files primarily in English.** Translations may be provided as supplementary documentation when requested. This documentation preference does not change the website's bilingual interface.
+
+## Google website ownership verification
+
+The root file `google0e7849a24014a087.html` is the original Google verification file supplied by the owner for Android developer website verification. Keep its filename and contents unchanged, and retain it after verification.
+
+Expected public URL: https://hackermooseai.com/google0e7849a24014a087.html
+
+### Current status and follow-up
+
+- October 22, 2026: Added the original verification file to this static site's root. Its SHA-256 matches the supplied file.
+- Public availability and Google's verification result still need to be confirmed after deployment. Publishing the file alone does not establish that Android developer verification is complete.
+
+### Recent work
+
+- October 22, 2026: Added Google HTML website ownership verification without changing the homepage, contact form, or linked applications. Verified the local file against the owner-supplied original.
